@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense with Async Await</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Expenses</h1>
+   <div>
+    <form onsubmit=saveToCrud(event)>
+        <label for="amount">Enter expense amount</label>
+        <input type="text" name="amount" id="amount"><br>
+        <label for="description">Add description</label>
+        <input id="description" type="text" name="description" id="description"><br>
+        <label id="category" for="category">Select category</label>
+        <select name="category" id="category">
+            <option value="select">Select one</option>
+            <option value="medicine">Food</option>
+            <option value="grocery">Grocery</option>
+            <option value="Food">Medicine</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="education">Education</option>
+        </select><br>
+        <button id="btn">Add Expense</button>
+    </form>
+    </div>
+    <ul id="list"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="file.js"></script>
+    
+</body>
+</html>
