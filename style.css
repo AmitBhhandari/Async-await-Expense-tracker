@@ -32,9 +32,13 @@ h1{
    text-align: center;
 }
 div{
-    height: 300px;
+    height: 600px;
     border: 2px solid black;
     width: 800px;
     margin-left: 350px;
-
+    background-color: antiquewhite;
+   
+}
+#list{
+    text-align: center;
 }

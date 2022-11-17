@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Expenses</h1>
+   
    <div>
+    <h1>My Expenses</h1>
     <form onsubmit=saveToCrud(event)>
         <label for="amount">Enter expense amount</label>
         <input type="text" name="amount" id="amount"><br>
@@ -26,8 +27,10 @@
         </select><br>
         <button id="btn">Add Expense</button>
     </form>
-    </div>
+
     <ul id="list"></ul>
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
     <script src="file.js"></script>
     
